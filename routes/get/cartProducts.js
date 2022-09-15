@@ -7,5 +7,6 @@ const { cartProducts } = require('../../controllers/get/cartProducts');
 
 // products get api here
 router.get('/getFromCartList/:email', cartProducts);
+bdsdsndbsbd;
 
 module.exports = router;
