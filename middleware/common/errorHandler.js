@@ -1,18 +1,17 @@
-const createError = require("http-errors");
+const createError = require('http-errors');
 
-// 404 not found route error here
-function not__found__route(req, res, next) {
-  next(createError(404, "Page not found...!"));
+// 404 not found error
+function notFoundError(req, res, next) {
+	next(createError(404, 'Page not found...!'));
 }
 
-// default error handler here
-function error__handler(err, req, res, next) {
-  res.json(err);
+// default error handler
+function errorHandler(err, req, res, next) {
+	res.status(400).json(err);
 }
 
-// handlers are export here
-
+// export
 module.exports = {
-  not__found__route,
-  error__handler,
+	notFoundError,
+	errorHandler,
 };
