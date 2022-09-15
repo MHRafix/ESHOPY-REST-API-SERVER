@@ -1,6 +1,5 @@
 const wishlistCollection = require('../../models/wishlistModel');
 
-// get products api controller here
 exports.wishlistProducts = async (req, res, next) => {
 	try {
 		const query = { userEmail: req.params.email };

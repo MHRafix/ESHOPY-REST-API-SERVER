@@ -1,7 +1,5 @@
-// internal imports are here
 const orderCollection = require('../../models/orderModel');
 
-// get products api controller here
 exports.orderedProducts = async (req, res, next) => {
 	try {
 		const query = { userEmail: req.params.email };

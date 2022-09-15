@@ -1,7 +1,5 @@
-// internal imports are here
 const wishlistCollection = require('../../models/wishlistModel');
 
-// post api controller here
 exports.addWishlist = async (req, res, next) => {
 	try {
 		const product = req.body;

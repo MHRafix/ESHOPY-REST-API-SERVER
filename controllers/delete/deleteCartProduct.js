@@ -1,7 +1,5 @@
-// internal imports are here
 const cartCollection = require('../../models/cartModel');
 
-// post api controller here
 exports.deleteCartProduct = async (req, res, next) => {
 	try {
 		const uniqueId = req.params.uniqueId;
