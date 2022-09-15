@@ -28,6 +28,6 @@ const wishlistSchema = new mongoose.Schema({
 });
 
 // make this schema a data model
-const WishlistProducts = mongoose.model('wishlistProduct', wishlistSchema);
+const WishlistProducts = mongoose.model('wishlist', wishlistSchema);
 
 module.exports = WishlistProducts;
