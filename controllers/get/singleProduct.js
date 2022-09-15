@@ -1,7 +1,6 @@
 const ObjectId = require('mongodb').ObjectId;
 const productsCollection = require('../../models/productsModel');
 
-// get products api controller here
 exports.singleProduct = async (req, res, next) => {
 	try {
 		const unique_id = req.params.productId;

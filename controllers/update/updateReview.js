@@ -1,7 +1,5 @@
-// internal imports are here
 const productsCollection = require('../../models/productsModel');
 
-// update api controller here
 exports.updateReview = async (req, res, next) => {
 	try {
 		const selectedProduct = await productsCollection.findOne({

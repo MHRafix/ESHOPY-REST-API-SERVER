@@ -1,7 +1,5 @@
-// internal imports are here
 const wishlistCollection = require('../../models/wishlistModel');
 
-// post api controller here
 exports.deleteWishlistProduct = async (req, res, next) => {
 	try {
 		const uniqueId = req.params.uniqueId;

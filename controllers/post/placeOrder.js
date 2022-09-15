@@ -1,7 +1,5 @@
-// internal imports are here
 const orderCollection = require('../../models/orderModel');
 
-// post api controller here
 exports.placeOrder = async (req, res, next) => {
 	try {
 		const order__data = req.body;

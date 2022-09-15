@@ -1,7 +1,5 @@
-// internal imports are here
 const productsCollection = require('../../models/productsModel');
 
-// get products api controller here
 exports.catgorizeProducts = async (req, res, next) => {
 	try {
 		const { category } = req.params;

@@ -1,7 +1,5 @@
-// internal imports are here
 const cartCollection = require('../../models/cartModel');
 
-// post api controller here
 exports.decreaseQty = async (req, res, next) => {
 	try {
 		const selectedProduct = await cartCollection.findOne({

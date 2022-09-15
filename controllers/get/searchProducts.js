@@ -1,6 +1,5 @@
 const productsCollection = require('../../models/productsModel');
 
-// get products api controller here
 exports.searchResult = async (req, res, next) => {
 	try {
 		const all_products = await productsCollection.find();

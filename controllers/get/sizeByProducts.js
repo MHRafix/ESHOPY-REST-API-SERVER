@@ -1,6 +1,5 @@
 const productsCollection = require('../../models/productsModel');
 
-// get products api controller here
 exports.sizeFilter = async (req, res, next) => {
 	try {
 		const products = await productsCollection.find();
